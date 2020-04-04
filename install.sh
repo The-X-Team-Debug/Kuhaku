@@ -65,7 +65,7 @@ echo "#!$BASH_PATH
 python $INSTALL_DIR/kuhaku.py" "${1+"$@"}" > "$INSTALL_DIR/Kuhaku";
 chmod +x "$INSTALL_DIR/Kuhaku";
 if [ "$TERMUX" = true ]; then
-    cp "$INSTALL_DIR/kuhaku_tools" "$BIN_DIR"
+    cp "$INSTALL_DIR/Kuhaku" "$BIN_DIR"
     cp "$INSTALL_DIR/kuhaku.cfg" "$BIN_DIR"
 else
     sudo cp "$INSTALL_DIR/Kuhaku" "$BIN_DIR"
