@@ -21,7 +21,7 @@ echo "
 
 if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
 
-    INSTALL_DIR="$PREFIX/usr/share/doc/kuhaku_tools"
+    INSTALL_DIR="$PREFIX/usr/share/doc/Kuhaku"
 
     BIN_DIR="$PREFIX/bin/"
 
@@ -31,7 +31,7 @@ if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
 
 elif [ "$(uname)" = "Darwin" ]; then
 
-    INSTALL_DIR="/usr/local/kuhaku_tools"
+    INSTALL_DIR="/usr/local/Kuhaku"
 
     BIN_DIR="/usr/local/bin/"
 
@@ -41,7 +41,7 @@ elif [ "$(uname)" = "Darwin" ]; then
 
 else
 
-    INSTALL_DIR="$HOME/.kuhaku_tools"
+    INSTALL_DIR="$HOME/.Kuhaku"
 
     BIN_DIR="/usr/local/bin/"
 
@@ -51,17 +51,17 @@ else
 
 fi
 
-echo "[✔] Checking directories...";
+echo "[✔] Memeriksa directories...";
 
 if [ -d "$INSTALL_DIR" ]; then
 
         rm -rf "$INSTALL_DIR"
 
-        rm "$BIN_DIR/kuhaku_tools*"
+        rm "$BIN_DIR/Kuhaku*"
 
         rm -rf "$INSTALL_DIR"
 
-        rm "$BIN_DIR/kuhaku_tools*"
+        rm "$BIN_DIR/Kuhaku*"
 
     else
 
