@@ -18,6 +18,7 @@ if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
 elif [ "$(uname)" = "Darwin" ]; then
     INSTALL_DIR="/usr/local/Kuhaku"
     BIN_DIR="/usr/local/bin/"
+    
     BASH_PATH="/bin/bash"
     TERMUX=false
 else
@@ -59,9 +60,9 @@ fi
 
 echo "[✔] Menginstall ...";
 echo "";
-git clone --depth=1 https://github.com/The-X-Team-Debug/kuhaku_tools "$INSTALL_DIR";
+git clone --depth=1 https://github.com/The-X-Team-Debug/Kuhaku "$INSTALL_DIR";
 echo "#!$BASH_PATH
-python $INSTALL_DIR/kuhaku.py" "${1+"$@"}" > "$INSTALL_DIR/fsociety";
+python $INSTALL_DIR/kuhaku.py" "${1+"$@"}" > "$INSTALL_DIR/Kuhaku";
 chmod +x "$INSTALL_DIR/Kuhaku";
 if [ "$TERMUX" = true ]; then
     cp "$INSTALL_DIR/kuhaku_tools" "$BIN_DIR"
